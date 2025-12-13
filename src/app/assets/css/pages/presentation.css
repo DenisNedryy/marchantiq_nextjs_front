@@ -1,0 +1,9 @@
+.presentation .box img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.presentation h2 {
+    text-decoration: underline green;
+    font-size: 25px;
+}

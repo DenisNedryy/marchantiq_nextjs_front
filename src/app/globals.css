@@ -1,0 +1,19 @@
+/* Utils */
+@import "./assets/css/utils/animation.css";
+@import "./assets/css/utils/mediaQueries.css";
+@import "./assets/css/utils/miseEnPage.css";
+@import "./assets/css/utils/utils.css";
+
+/* Layouts */
+@import "./assets/css/layouts/header.css";
+@import "./assets/css/layouts/categories.css";
+@import "./assets/css/layouts/footer.css";
+
+/* Pages */
+@import "./assets/css/pages/accueil.css";
+@import "./assets/css/pages/admin.css";
+@import "./assets/css/pages/auth.css";
+@import "./assets/css/pages/contact.css";
+@import "./assets/css/pages/items.css";
+@import "./assets/css/pages/news.css";
+@import "./assets/css/pages/presentation.css";

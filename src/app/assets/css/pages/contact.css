@@ -1,0 +1,161 @@
+
+hr {
+    width: 80%;
+    margin: 20px 0;
+    height: 1px;
+    border: 0;
+    background: #a58934;
+}
+
+.contact__coordonées {
+    display: flex;
+}
+
+.contact__coordonées--address {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__coordonées--address--name {
+    padding-bottom: 10px;
+    display: block;
+    color: #a58934;
+    font-weight: 600;
+}
+
+.contact__coordonées--localisation {
+    width: 100%;
+}
+
+/* .contact__coordonées img {
+    width: 84%;
+    align-self: flex-start;
+    margin-bottom: 20px;
+} */
+
+.contact__contact__addresseEmail {
+    color: #a58934;
+    text-decoration: none;
+    margin: 5px 0px 15px 0px;
+}
+
+.contact__coordonées__flyer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation-name: appearsFromRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    height: 400px;
+}
+
+.contact__coordonées__flyer img {
+    width: 47%;
+    transition-duration: .4s;
+    position: relative;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact__coordonées__flyer img:hover {
+    /* transform: scale(1.8) translateX(-10%) translateY(-20%); */
+    cursor: pointer;
+}
+
+.flyerSelected {
+    animation-name: flyersSelection;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 9999;
+
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+/* ----------contact formulaire----------- */
+
+.contactForm .form__direction__container {
+    flex-direction: unset;
+}
+
+.form__direction__container div {
+    margin: 10px 5px 5px 0px;
+}
+
+.contactForm textarea {
+    height: 136px;
+    resize: none;
+    padding: 15px;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__direction__container {
+    display: flex;
+}
+
+.contactForm__rest {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm__rest>div {
+    flex-direction: column;
+}
+
+.contactForm__rest div {
+    margin: 10px 5px 5px 0px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnContainer .btn {
+    width: 105px;
+    align-self: flex-end;
+}
+
+/* ------form tel------- */
+
+.phoneNumberField img {
+    width: 20px;
+    height: 20px;
+}
+
+.phoneNumberField__inputs {
+    display: flex;
+    position: relative;
+}
+
+.phoneNumberField__inputs input {
+    height: 32px;
+}
+
+.myTelInput {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    width: 237px;
+}

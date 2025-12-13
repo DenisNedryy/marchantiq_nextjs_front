@@ -1,0 +1,42 @@
+form>div {
+    margin: 0px 0px 6px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+form>div input {
+    padding: 7px;
+    width: 100%;
+    background: #eee;
+    border: 1px solid #ccc;
+    color: #372215;
+    font-weight: 700;
+    outline: none;
+}
+
+form>div select {
+    padding: 7px;
+    width: 100%;
+    background: #eee;
+    border: 1px solid #ccc;
+    color: #372215;
+    font-weight: 700;
+    outline: none;
+}
+form>div textarea {
+    padding: 7px;
+    width: 100%;
+    background: #eee;
+    border: 1px solid #ccc;
+    color: #372215;
+    font-weight: 700;
+    outline: none;
+    height: 100px;
+    resize:none;
+}
+
+.toggleAuth-para {
+    margin-top: 50px;
+    font-family: titres;
+    cursor: pointer;
+}

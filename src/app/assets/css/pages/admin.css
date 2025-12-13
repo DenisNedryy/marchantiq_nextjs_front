@@ -1,0 +1,71 @@
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: rgb(51, 51, 51);
+}
+
+.steps i {
+    color: rgb(220, 13, 24);
+    border: 2px solid rgb(220, 13, 24);
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.steps h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.steps__category {
+    display: flex;
+}
+
+.steps__category p {
+    margin: 15px;
+}
+
+.createForm {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.createForm button[type='submit'] {
+    align-self: center;
+}
+
+label {
+    margin: 10px 0px 5px 0px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: initial;
+}
+.form-buttons .btn {
+    margin: 5px;
+}
+
+/* images items */
+.showImages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 18px auto;
+}
+
+.showImages img {
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+}

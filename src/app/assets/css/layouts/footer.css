@@ -1,0 +1,87 @@
+footer {
+	display: flex;
+	padding: 15px;
+	margin-top: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* border-top: 1px solid black; */
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.footerContainer {
+	display: flex;
+	width: 100%;
+}
+
+.footerContainer__top {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.footerContainer__top__left {
+	display: flex;
+	align-items: center;
+}
+
+.footerContainer__top__left img {
+	width: 100px;
+}
+
+.footerContainer__top__left__text--titre {
+	font-family: german;
+	font-size: 20px;
+	line-height: 22px;
+}
+
+.footerContainer__top__left__text--description {
+	font-family: titres;
+	color: rgb(190, 30, 58);
+}
+
+.footerContainer__top__right {
+	display: flex;
+}
+
+.footerContainer__top__right--category {
+	margin: 0px 40px;
+}
+
+.footerContainer__top__right--category p {
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+footer li {
+	list-style-type: none;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.footerContainer__top__left p {
+	font-family: eastAnglia;
+}
+
+footer li {
+	list-style-type: none;
+	margin-bottom: 10px;
+	/* OK pour l'espacement entre liens */
+	font-weight: 600;
+	color: rgba(0, 0, 0, .7);
+}
+
+/* c'est ça qui corrige Lighthouse */
+footer li a {
+	display: inline-block;
+	/* ou flex/inline-flex */
+	padding: 3px 0;
+	/* 10px haut + bas = ~40px total */
+
+	text-decoration: none;
+	line-height: 1.4;
+}

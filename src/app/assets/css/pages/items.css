@@ -1,0 +1,288 @@
+.items__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.items__container img {
+    width: 184px;
+    height: 100%;
+    object-fit: fill;
+    background-image: url("../../../../../public/assets/pictures/bg/pink.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.items__container__item {
+    margin: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    height: 202px;
+    transition-duration: 1s;
+    width: 184px;
+}
+
+.imgNotFound {
+    padding: 15px;
+    width: 66%;
+    max-width: 700px;
+    max-height:600px;
+}
+
+.items__container__item--banner {
+    position: absolute;
+    background: linear-gradient(275deg, rgba(37, 99, 235, 1) 31%, rgba(9, 50, 139, 1) 85%);
+    transform: translateX(25%) translateY(17%) rotate(32deg);
+    padding: 5px;
+    color: white;
+    right: -7px;
+    text-align: center;
+    border: 1px solid black;
+    z-index: 600;
+    width: 238px;
+    font-size: 18px;
+    top: 9px;
+}
+
+.items__container__item:hover .items__container__item__text {
+    transform: translateY(0%);
+}
+
+.items__container__item__text {
+    position: absolute;
+    bottom: 0px;
+    color: black;
+    background-color: rgba(255, 255, 255, .6);
+    width: 184px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    transform: translateY(100%);
+    transition-duration: .4s;
+}
+
+.items__container__item__text--name {
+    color: black;
+    margin: 13px 0;
+    font-weight: 600;
+    width: 90%;
+}
+
+
+
+
+/* -------items details------- */
+
+.itemsDetails__text p {
+    margin: 5px 0px;
+}
+
+.itemsDetails__text .btn {
+    margin: 10px;
+}
+
+.itemDetails {
+    display: flex;
+    width: 100%;
+}
+
+.itemsDetails__text {
+    width: 50%;
+}
+
+.itemsDetails__img {
+    width: 50%;
+}
+
+.carrouselMini__pictures__view__slides {
+    display: flex;
+}
+
+.carrouselMini__pictures__view__slides__slide img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.itemsDetails__text__buttons {
+    display: flex;
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+.itemsDetails__text__buttons i {
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+}
+
+.btn-modify-items {
+    background-color: #13d91330;
+    transition-duration: .4s;
+}
+
+.btn-modify-items:hover {
+    background-color: #13d91357;
+}
+
+.btn-delete-items {
+    background-color: #df2e2e52;
+}
+
+.btn-delete-items:hover {
+    background-color: #df2e2e6c;
+}
+
+.btn-add-items {
+    background-color: #ffa50047;
+}
+
+.btn-add-items:hover {
+    background-color: #d59a2f82;
+}
+
+
+/* ---------carrousel mini------------ */
+
+.carrouselMini__previewContainer {
+    position: relative;
+}
+
+.carrouselMini__previewContainer__text__buttons {
+    display: flex;
+    width: fit-content;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 0%;
+    background-color: white;
+}
+
+.carrouselMini__previewContainer__text__buttons i {
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+}
+
+.carrouselMini img:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+.carrouselMini--preview {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    cursor: pointer;
+    animation: myAnim .6s ease 0s 1 normal forwards;
+    object-fit: contain;
+    background-image: url("../../../../../public/assets/pictures/bg/pink.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carrouselMini--previewNinja {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+    position: absolute;
+}
+
+.carrouselMini__previewContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.carrouselMini__pictures__view {
+    width: 250px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carrouselMini__pictures {
+    position: relative;
+}
+
+.turnLeft,
+.turnRight {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 15px;
+    z-index: 800;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turnLeft {
+    left: 5px;
+}
+
+.turnRight {
+    right: 5px;
+}
+
+
+.carrouselMini__dots {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.currentDot {
+    background-color: rgb(255, 0, 108);
+}
+
+.carrouselMini__miniatures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.carrouselMini__miniatures img {
+    width: 75px;
+    height: auto;
+    max-height: 75px;
+    object-fit: cover;
+    padding: 3px
+}
+
+
+
+
+/* --------search------- */
+
+.searchItems img {
+    width: 100%;
+}

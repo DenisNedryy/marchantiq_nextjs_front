@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    /* background-color: rgb(245, 235, 209); */
+    background-image: url("/assets/pictures/bg/papyrus_ancien_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 70px - 143px);
+    padding-top: 239px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
