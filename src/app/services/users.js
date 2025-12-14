@@ -7,7 +7,7 @@ export async function disconnect() {
             headers: {
                 'Content-Type': "application/json"
             },
-            cache: "no-store",
+                cache: "no-store", 
             credentials: "include",
         });
         const res = await preRes.json();
@@ -28,7 +28,7 @@ export async function signOut(data) {
             headers: {
                 'Content-Type': "application/json"
             },
-            cache: "no-store",
+                cache: "no-store", 
             credentials: "include",
             body: JSON.stringify({
                 name: data.name,
@@ -55,7 +55,7 @@ export async function signIn(data) {
             headers: {
                 'Content-Type': "application/json"
             },
-            cache: "no-store",
+                cache: "no-store", 
             credentials: "include",
             body: JSON.stringify({
                 email: data.email,
@@ -77,6 +77,7 @@ export async function isUserConnected() {
     try {
         const preRes = await fetch(`${HOST}/api/auth/isUserConnected`, {
             method: "GET",
+                cache: "no-store", 
             credentials: 'include',
             headers: {
                 "Content-Type": "application/json",

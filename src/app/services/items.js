@@ -8,7 +8,7 @@ export async function getItems() {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -25,7 +25,7 @@ export async function getOneItem(uuid) {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -42,7 +42,7 @@ export async function getItemsByCategory(category) {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -59,7 +59,7 @@ export async function getItemsByResearch(query) {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -79,7 +79,7 @@ export async function createItem(data) {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
             body: JSON.stringify(data),
         });
         const res = await preRes.json();
@@ -97,7 +97,7 @@ export async function addImage(data, uuid) {
             headers: {
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
             body: data
         });
         const res = await preRes.json();
@@ -115,7 +115,7 @@ export async function updateItem(uuid, data) {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
             body: JSON.stringify(data),
         });
         const res = await preRes.json();
@@ -132,7 +132,7 @@ export async function updateItemImage(imgUuid, data) {
             headers: {
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
             body: data
         });
         const res = await preRes.json();
@@ -150,7 +150,7 @@ export async function deleteItem(uuid) {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -167,7 +167,7 @@ export async function deleteItemImg(imgUuid) {
                 'Content-Type': "application/json"
             },
                 cache: "no-store", 
-                credentials: "include",
+            credentials: "include",
         });
         const res = await preRes.json();
         return res;
