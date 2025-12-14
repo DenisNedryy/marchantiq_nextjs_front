@@ -7,7 +7,8 @@ export async function getItems() {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -23,7 +24,8 @@ export async function getOneItem(uuid) {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -39,7 +41,8 @@ export async function getItemsByCategory(category) {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -55,7 +58,8 @@ export async function getItemsByResearch(query) {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -74,7 +78,8 @@ export async function createItem(data) {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
             body: JSON.stringify(data),
         });
         const res = await preRes.json();
@@ -91,7 +96,8 @@ export async function addImage(data, uuid) {
             method: "POST",
             headers: {
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
             body: data
         });
         const res = await preRes.json();
@@ -108,7 +114,8 @@ export async function updateItem(uuid, data) {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
             body: JSON.stringify(data),
         });
         const res = await preRes.json();
@@ -124,7 +131,8 @@ export async function updateItemImage(imgUuid, data) {
             method: "PUT",
             headers: {
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
             body: data
         });
         const res = await preRes.json();
@@ -141,7 +149,8 @@ export async function deleteItem(uuid) {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
         });
         const res = await preRes.json();
         return res;
@@ -157,7 +166,8 @@ export async function deleteItemImg(imgUuid) {
             headers: {
                 'Content-Type': "application/json"
             },
-            credentials: "include",
+                cache: "no-store", 
+                credentials: "include",
         });
         const res = await preRes.json();
         return res;

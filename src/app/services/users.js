@@ -7,6 +7,7 @@ export async function disconnect() {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
         });
         const res = await preRes.json();
@@ -27,6 +28,7 @@ export async function signOut(data) {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
             body: JSON.stringify({
                 name: data.name,
@@ -53,6 +55,7 @@ export async function signIn(data) {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
             body: JSON.stringify({
                 email: data.email,

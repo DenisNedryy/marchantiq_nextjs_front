@@ -7,6 +7,7 @@ export async function getNews() {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
         });
         const res = await preRes.json();
@@ -23,6 +24,7 @@ export async function getNewsByCategory(category) {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
         });
         const res = await preRes.json();
@@ -39,20 +41,22 @@ export async function getOneNews(uuid) {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
         });
-        const res = await preRes.json(); 
+        const res = await preRes.json();
         return res;
-    } catch (err) { 
+    } catch (err) {
         console.error(err);
-    } 
+    }
 };
 
 export async function createNews(data) {
     try {
         const preRes = await fetch(`${HOST}/api/news`, {
             method: "POST",
-            headers: {},
+            he
+                cache: "no-store", aders: {},
             credentials: "include",
             body: data
         });
@@ -69,10 +73,11 @@ export async function updateNews(uuid, data) {
             method: "PUT",
             headers: {
             },
+            cache: "no-store",
             credentials: "include",
             body: data
         });
-        const res = await preRes.json(); 
+        const res = await preRes.json();
         return res;
     } catch (err) {
         console.error(err);
@@ -86,6 +91,7 @@ export async function deleteNews(uuid) {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
         });
         const res = await preRes.json();

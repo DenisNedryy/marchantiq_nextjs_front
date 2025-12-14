@@ -7,6 +7,7 @@ export async function getThreads() {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
         });
         const res = await preRes.json();
@@ -23,6 +24,7 @@ export async function getThreadsByNews(threads_uuid) {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
         });
         const res = await preRes.json();
@@ -39,7 +41,8 @@ export async function createThreads(newsUuid, data) {
             headers: {
                 'Content-Type': "application/json"
             },
-            body: JSON.stringify(data),
+            bo
+                cache: "no-store", dy: JSON.stringify(data),
             credentials: "include",
         });
         const res = await preRes.json();
@@ -55,6 +58,7 @@ export async function createThreadImg(threads_uuid, data) {
             method: "POST",
             headers: {
             },
+            cache: "no-store",
             credentials: "include",
             body: data
         });
@@ -73,6 +77,7 @@ export async function updateThreads(threads_uuid, data) {
             headers: {
                 'Content-Type': "application/json"
             },
+            cache: "no-store",
             credentials: "include",
             body: JSON.stringify(data),
         });
@@ -84,12 +89,13 @@ export async function updateThreads(threads_uuid, data) {
 };
 
 
-export async function updateThreadImg(threadsImg_uuid,data) {
+export async function updateThreadImg(threadsImg_uuid, data) {
     try {
         const preRes = await fetch(`${HOST}/api/threads/updateThreadImg/${threadsImg_uuid}`, {
             method: "PUT",
             headers: {
             },
+            cache: "no-store",
             credentials: "include",
             body: data,
         });
@@ -106,6 +112,7 @@ export async function deleteThread(threads_uuid) {
             method: "DELETE",
             headers: {
             },
+            cache: "no-store",
             credentials: "include",
         });
         const res = await preRes.json();
@@ -117,13 +124,14 @@ export async function deleteThread(threads_uuid) {
 
 export async function deleteThreadImg(threadsImg_uuid) {
     try {
-        const preRes = await fetch(`${HOST}/api/threads/deleteThreadImg/${threadsImg_uuid}`, { 
+        const preRes = await fetch(`${HOST}/api/threads/deleteThreadImg/${threadsImg_uuid}`, {
             method: "DELETE",
             headers: {
             },
+            cache: "no-store",
             credentials: "include",
         });
-        const res = await preRes.json(); 
+        const res = await preRes.json();
         return res;
     } catch (err) {
         console.error(err);
