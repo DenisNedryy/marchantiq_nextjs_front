@@ -55,8 +55,8 @@ export async function createNews(data) {
     try {
         const preRes = await fetch(`${HOST}/api/news`, {
             method: "POST",
-            he
-                cache: "no-store", aders: {},
+            headers: {},
+            cache: "no-store",
             credentials: "include",
             body: data
         });
