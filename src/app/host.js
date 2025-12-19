@@ -1,1 +1,1 @@
-export const HOST = "https://api-main.marchantiq.fr";  
+export const HOST = "https://api-main.marchantiq.fr";  //"https://api-main.marchantiq.fr";  

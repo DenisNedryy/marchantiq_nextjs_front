@@ -59,7 +59,7 @@ export function MyAside() {
                         <li className={`${pathname==="/items/miscellaneous"? "active" : ""}`} onClick={toggleCategoriesMini}><Link href="/items/miscellaneous" > <Image src={blason_8} alt={"logo blason divers"} width={30} height={30} /><p>Divers</p></Link></li>
                     </ul>
                 </div>
-                {!isMobileCategories && <Image src={horloge} alt={horloge} width={273} className="horloge" />}
+                 <Image src={horloge} alt={horloge} width={273} className="horloge" />
             </div>
         </>
     );
