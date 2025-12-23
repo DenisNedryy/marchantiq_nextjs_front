@@ -39,7 +39,7 @@ export default async function Contact({ params }) {
                     <p className="contact__contact__para">Vous avez une question sur l’un de nos objets ?</p>
                     <p className="contact__contact__para">Vous souhaitez obtenir une estimation et nous proposer un échange ou un achat ?</p>
                     <p className="contact__contact__para">Pour toute demande, merci d’utiliser le formulaire de contact ci-dessous.</p>
-                    <p className="contact__contact__addresseEmail">Adresse email Marchantiq : march.jf@orange.fr</p>
+                    <p className="contact__contact__addresseEmail">Adresse email Marchantiq : contact@marchantiq.fr</p>
                 </div>
                 <ContactForm uuid={id}/> 
             </div>
