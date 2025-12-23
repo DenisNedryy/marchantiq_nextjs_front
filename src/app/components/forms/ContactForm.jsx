@@ -36,6 +36,7 @@ export function ContactForm({ uuid }) {
       console.error("Erreur envoi mail:", err);
     } finally {
       setLoading(false);
+         alert('Votre message a bien été envoyé');
     }
   }
 
